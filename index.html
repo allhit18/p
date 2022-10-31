@@ -904,6 +904,7 @@
 					
 				</div><!-- .hm-container -->
 			</div><!-- .header-main-area -->
+			<hr/>
 			<script type="text/javascript">
 	atOptions = {
 		'key' : 'c6fcffcacad54c8a8a3620bc4f4bed2a',
@@ -914,10 +915,31 @@
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://flawerosion.com/c6fcffcacad54c8a8a3620bc4f4bed2a/invoke.js"></scr' + 'ipt>');
 </script>
-			<h2>Please wait your video is loading</h2>
+<style>.load-subscribe {
+    /* To position the loading */
+    position: relative;
+}
+
+.loading {
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Center */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} </style>
+			
 			<div id="load-subscribe">
-				</div>
-			  <script type="text/javascript">
+                    <div class="loading" id="loading"><h2>Please wait your video is loading</h2><img src="http://i.stack.imgur.com/XEupj.gif"></div>
+                                    </div>
+				<script type="text/javascript">
 				 let urlString = window.location.search;
 				 let xnxxcode;
         let paramString = urlString.split('?')[1];
@@ -933,13 +955,28 @@
 substack.width = "500";
 substack.height = "300";
 substack.frameBorder ="0";
+substack.id="hubxiframe";				  
 substack.scrolling = "0";
 substack.style.border= "none";
 substack.style.background = "white";
 loadSubscribe.appendChild(substack);
 			  </script>
+              <script>
+            const iframeEle = document.getElementById('hubxiframe');
+const loadingEle = document.getElementById('loading');
+
+iframeEle.addEventListener('load', function () {
+    // Hide the loading indicator
+    loadingEle.style.display = 'none';
+
+    // Bring the iframe back
+    iframeEle.style.opacity = 1;
+});
+
+              </script>
 <script async="async" data-cfasync="false" src="//flawerosion.com/a4d7922fb548db03f8ac9d40ed430a05/invoke.js"></script>
 <div id="container-a4d7922fb548db03f8ac9d40ed430a05"></div>
+			<hr/>
 			<div class="hm-nav-container">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="hm-container">
